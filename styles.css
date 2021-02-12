@@ -1,0 +1,193 @@
+/* --------------------------------------------------- Allgemein  ----------------------------------------------------*/
+body{
+    background-color: #20214f ;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.welcome-header{
+    background-image: url("./assets/pic01.jpg");
+    min-height: 650px;
+    background-size: cover;
+}
+
+.welcome-header2{
+    background-image: url("./assets/pic01.jpg");
+    min-height: 390px;
+    background-size: cover;
+}
+
+.welcome-room{
+    background-image: url("./assets/pic02.jpg");
+    min-height: 650px;
+    background-size: cover;
+}
+
+.welcome-bath{
+     background-image: url("./assets/pic03.jpg");
+     min-height: 650px;
+     background-size: cover;
+ }
+
+.welcome-suite{
+    background-image: url("./assets/pic04.jpg");
+    min-height: 650px;
+    background-size: cover;
+}
+
+.custom-bg{
+    background-color: rgba(0,0,0, .75);
+}
+
+.px-3{
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.stylehr{
+    background: goldenrod;
+    height: 0.5em;
+    border: none;
+    margin-bottom: 2em;
+}
+
+.heading{
+    color: white;
+}
+
+.colGol{
+    color: goldenrod;
+}
+
+.spacer{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3%;
+    padding: 1em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.page-item.active .page-link{
+    background-color: goldenrod;
+    color: black;
+    border-color: goldenrod;
+}
+.page-link{
+    color: black;
+}
+
+.page-link:hover, .page-link:focus , .page-link:active{
+    color: black;
+}
+
+a{
+    color:black;
+}
+
+/* -----------------------------     Animation 1 Preloader (Start - Anim.)  ------------------------------------------*/
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid goldenrod;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadeout{
+    animation-name: fade-out;
+    animation-duration: 3s;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1 ;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+/* ---------------------------------------     Animation 2 Hover  -----------------------------------------------*/
+
+/*  Hover-Bild  */
+.img-hover {
+    overflow: hidden;
+
+}
+
+.img-hover img{
+    transition: transform .5s ease;
+}
+
+.img-hover:hover img{
+    overflow: hidden;
+    transform: scale(1.1);
+}
+
+
+/*  Hover-Button  */
+
+.btnstyle{
+    background-color: goldenrod;
+    padding: .5em;
+    border: none;
+    border-radius: 3px;
+    transition: background-color .5s ease;
+}
+
+.btnstyle:hover, .btnstyle:active, .btnstyle:focus{
+    background-color: #DAC089;
+}
+
+
+/* --------------------------------------     Animation 3 (meiner Wahl)  --------------------------------------------*/
+
+/*  Animierte Trennlinie  */
+
+.stylehr{
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-play-state: initial;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes slideInLeft {
+    from {
+        margin-right: 100%;
+    }
+    to{
+        margin-right: 0;
+    }
+}
